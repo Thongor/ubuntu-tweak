@@ -713,7 +713,7 @@ class SourcesView(gtk.TreeView):
         conflicts = SOURCE_PARSER.get_conflicts(id)
         dependencies = SOURCE_PARSER.get_dependencies(id)
 
-        #Convert to real model, because will involke the set method
+        #Convert to real model, because will invoke the set method
         if type(model) == gtk.TreeModelFilter:
             iter = model.convert_iter_to_child_iter(iter)
             model = model.get_model()

@@ -36,7 +36,7 @@ log = logging.getLogger("Templates")
 def update_dir():
     system_dir = os.path.join(CONFIG_ROOT, 'templates')
 
-    #TODO maybe remove these code in the future
+    #TODO maybe remove this code in the future
     old_system_dir = os.path.expanduser('~/.ubuntu-tweak/templates')
     if os.path.exists(old_system_dir) and not os.path.exists(system_dir):
         log.debug('Move the old_system_dir to new system_dir')
